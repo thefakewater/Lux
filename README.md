@@ -12,6 +12,12 @@
   <img src="https://img.shields.io/website?url=https%3A%2F%2Fwww.omegle.com%2F">
   <img src="https://img.shields.io/github/stars/ShadowNoxX/Lux">
 </p>
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a>
+</p>
 
 ## Features
 * Automatic Skip
