@@ -33,7 +33,7 @@
   - Windows, macOS and Linux.
 
 ## How to use
-To clone and run this application, you'll need [Git](https://git-scm.com), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Geckodriver to PATH](https://github.com/mozilla/geckodriver/releases) and [IntelliJ IDEA](https://www.jetbrains.com/idea/) (which comes with [Kotlin](https://kotlinlang.org/) and [Gradle](https://gradle.org/) support) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Geckodriver to PATH](https://github.com/mozilla/geckodriver/releases), [Gradle](https://gradle.org/install/) and [IntelliJ IDEA](https://www.jetbrains.com/idea/) (which comes with [Kotlin](https://kotlinlang.org/) support) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
@@ -41,8 +41,8 @@ $ git clone https://github.com/ShadowNoxX/Lux.git
 
 # Open it inside IntelliJ Idea
 
-# Sync Gradle
-
+# Configure wrapper
+$ gradle wrapper
 # Run
 
 # If you want to generate a jar file
