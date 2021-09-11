@@ -31,22 +31,36 @@
   - Lux is optimized for speed.
 * Cross Platform
   - Windows, macOS and Linux.
+* Screenshot
+  - Lux will take a screenshot when conversation ends.
 
 ## How to use
-To clone and run this application, you'll need [Git](https://git-scm.com), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Geckodriver to PATH](https://github.com/mozilla/geckodriver/releases), [Gradle](https://gradle.org/install/) and [IntelliJ IDEA](https://www.jetbrains.com/idea/) (which comes with [Kotlin](https://kotlinlang.org/) support) installed on your computer. From your command line:
+To run this application, you'll need [Firefox](https://www.mozilla.org/en-US/firefox/new/), [Geckodriver to PATH](https://github.com/mozilla/geckodriver/releases) and [JRE 8](https://www.java.com/en/download/) installed on your computer. From your command line:
+```bash
+# Download the latest jar file from https://github.com/ShadowNoxX/Lux/releases
 
+# Execute Jar file
+$ java -jar Lux.jar
+```
+
+
+## How to build
+To clone and build this application, you'll need [Gradle](https://gradle.org/install/) and [IntelliJ IDEA](https://www.jetbrains.com/idea/) (which comes with [Kotlin](https://kotlinlang.org/) support) installed on your computer. From your command line:
 ```bash
 # Clone this repository
 $ git clone https://github.com/ShadowNoxX/Lux.git
 
-# Open it inside IntelliJ Idea
+# Open the folder
+$ cd Lux
 
-# Configure wrapper
+# Gradle Setup
 $ gradle wrapper
-# Run
+$ gradlew
 
-# If you want to generate a jar file
+# Build Jar
 $ gradlew jar
+
+Now a jar will be created in build/libs folder
 ```
 
 ## Download
@@ -56,3 +70,4 @@ You can [download](https://github.com/ShadowNoxX/Lux/releases/) the latest insta
 This software uses the following open source packages:
 - [Kotlin](https://github.com/JetBrains/kotlin)
 - [Selenium](https://www.selenium.dev/)
+- [Gradle](https://gradle.org/)
