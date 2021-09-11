@@ -1,13 +1,14 @@
 package org.sithhub.omeglebot
 
+import org.apache.commons.io.FileUtils
 import org.openqa.selenium.By
 import org.openqa.selenium.OutputType
 import org.openqa.selenium.TakesScreenshot
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.firefox.FirefoxOptions
 import java.io.File
 import java.io.InputStream
-import org.apache.commons.io.FileUtils
 
 const val DELAY = 2000.toLong()
 
@@ -75,11 +76,15 @@ fun continueNew(driver: WebDriver) {
 }
 fun main(args: Array<String>) {
     System.setProperty("webdriver.firefox.driver", "") // Add your geckodriver.exe to path
-    val driver = FirefoxDriver()
+    System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true")
+    System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"browser_log.txt")
+    val options = FirefoxOptions()
+    options.setHeadless(true)
+    val driver = FirefoxDriver(options)
     driver.get("https://omegle.com/")
     startText(driver)
     acceptTos(driver)
-    val messages = readMessage().split(",")
+    val messages = readMessage().split('\n')
     var itr: ListIterator<String>
     var i = 0
     var artificial = true
