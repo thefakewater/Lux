@@ -27,7 +27,7 @@
 * Custom messages
   - Write your own messages in messages.txt.
 * Headless
-  - Choose wether or not Lux should be visible.
+  - Choose whether or not Lux should be visible.
 * Fast
   - Lux is optimized for speed.
 * Cross Platform
